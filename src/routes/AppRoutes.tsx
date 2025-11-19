@@ -9,6 +9,7 @@ import { RegisterPage } from '../pages/RegisterPage'
 import { ProfilePage } from '../pages/ProfilePage'
 import { PortfolioDetailPage } from '../pages/PortfolioDetailPage'
 import { PortfolioManagePage } from '../pages/PortfolioManagePage'
+import StartCreatingPage from '../pages/StartCreatingPage'
 import { ProtectedRoute } from '../components/auth/ProtectedRoute'
 
 export function AppRoutes() {
@@ -21,6 +22,7 @@ export function AppRoutes() {
         <Route path="/test-data" element={<TestDataPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/register" element={<RegisterPage />} />
+        <Route path="/start-creating" element={<StartCreatingPage />} />
         <Route path="/portfolio/:id" element={<PortfolioDetailPage />} />
         
         {/* Protected routes */}

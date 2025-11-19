@@ -56,6 +56,12 @@ export function Header() {
             >
               首页
             </Link>
+            <Link 
+              to="/start-creating" 
+              className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+            >
+              开始创作
+            </Link>
             {user ? (
               <div className="relative" ref={userMenuRef}>
                 <button
@@ -160,6 +166,13 @@ export function Header() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 首页
+              </Link>
+              <Link
+                to="/start-creating"
+                className="block px-4 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 transition-colors font-medium"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                开始创作
               </Link>
               {user ? (
                 <>

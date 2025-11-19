@@ -313,10 +313,10 @@ export function HomePage() {
               {!searchTerm && !selectedCategory && (
                 <div className="mt-6">
                   <Link
-                    to="/register"
+                    to="/start-creating"
                     className="btn-primary"
                   >
-                    立即注册
+                    开始创作
                   </Link>
                 </div>
               )}
@@ -335,7 +335,7 @@ export function HomePage() {
             加入我们的创作者社区，分享你的精彩作品
           </p>
           <Link
-            to="/register"
+            to="/start-creating"
             className="btn-primary"
           >
             开始创作
