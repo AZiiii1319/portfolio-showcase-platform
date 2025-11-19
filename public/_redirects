@@ -1,0 +1,14 @@
+# Netlify redirects file
+# This serves as a backup to the redirects defined in netlify.toml
+
+# SPA fallback - redirect all routes to index.html
+/*    /index.html   200
+
+# API proxy (if needed)
+/api/*  https://your-supabase-project.supabase.co/rest/v1/:splat  200
+
+# Force HTTPS redirect (optional)
+# http://your-domain.com/*  https://your-domain.com/:splat  301!
+
+# Redirect old URLs (example)
+# /old-path  /new-path  301
