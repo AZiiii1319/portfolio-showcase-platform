@@ -68,7 +68,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({ onSuccess, onError }) 
       <h2 className="text-2xl font-bold text-gray-900 mb-6">联系我们</h2>
       
       {/* Netlify Forms fallback - hidden form for form detection */}
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
         <input type="text" name="name" />
         <input type="email" name="email" />
         <input type="text" name="subject" />
